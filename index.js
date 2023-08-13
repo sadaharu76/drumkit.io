@@ -6,12 +6,12 @@ document.getElementsByClassName("drum")[i].addEventListener("click",function()
     switch(so)
     {
         case 'w':
-            var audio= new Audio('sounds/tom-1.mp3');
+            var audio= new Audio('tom-1.mp3');
             audio.play();
         case 'a':
-            var audio= new Audio('sounds/tom-2.mp3');
+            var audio= new Audio('tom-2.mp3');
             audio.play();
-            default: var audio= new Audio('sounds/crash.mp3');
+            default: var audio= new Audio('crash.mp3');
             audio.play();
     }
 
@@ -23,12 +23,12 @@ document.addEventListener("keypress",function(ke) //ke allows us to tap into the
     switch(ke.key) //key will check the particular key w/s required
     {
         case 'w':
-            var audio= new Audio('sounds/tom-1.mp3');
+            var audio= new Audio('tom-1.mp3');
             audio.play();
         case 'a':
-            var audio= new Audio('sounds/tom-2.mp3');
+            var audio= new Audio('tom-2.mp3');
             audio.play();
-        default: var audio= new Audio('sounds/kick-bass.mp3');
+        default: var audio= new Audio('kick-bass.mp3');
             audio.play();
     }
     ani(ke.key);
